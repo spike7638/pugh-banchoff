@@ -1,0 +1,31 @@
+Goal:
+.Get draw_tri working
+.Build a spherical complex and render it in colors
+.Build a circular complex and render it in colors
+
+Improve coloring scheme: colors for edges if they're top-dimensional. 
+
+NOTES: 
+complex: 
+  dimension, 
+  pointSet,
+  simplices{1...dim}, 
+  simplexCount(d),
+  simplex(d, i)  [ith simplex of dimension d]
+  vertex(i)
+  edge(i)
+  tri(i)
+  tet(i)  [fails if complex dimension is, say, 2]
+      
+equivariantComplex
+  complex based on equivariant (point?) set
+  
+equivariantSphereComplex
+  complex based on equivariant sphere set
+  
+draw_point (loc, options) 
+.draw_sphere_edge (loc, loc, options)
+.draw_sphere_tri (loc, loc, options)
+
+draw_edge
+draw_tri
