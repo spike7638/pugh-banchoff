@@ -1,5 +1,5 @@
 function draw_edge(v1, v2, varargin)
-% Draw an edge between v1 and v2, using the line spec in the varargs. 
+% Draw an edge between v1 and v2, which may be 2d or 3d points, using the line spec in the varargs. 
 
 v1 = v1(:);
 v2 = v2(:); 

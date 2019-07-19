@@ -1,5 +1,5 @@
 function draw_sphere_tri(v1, v2, v3, varargin)
-% Draw a triangle on the sphere, defined by corners v1, v2, v3, 
+% Draw a triangle on the sphere in 3-space, defined by corners v1, v2, v3, 
 % no two of which may be antipodal. 
 
 npoints = 20; 
@@ -42,7 +42,7 @@ z = squeeze(res(3,:,:));
 surf(x, y, z, z, 'EdgeColor', 'none', 'FaceLighting', 'gouraud', varargin{:}); 
 
 % Test code:
-%draw_sphere_tri([1;0;0], [0; 1; 0], [0;0;1], 'FaceColor', [0.4, 0.4, 0.9])
-%set(gca, 'DataAspectRatio', [1,1,1]);
-%camlight;
-%figure(gcf)
+% draw_sphere_tri([1;0;0], [0; 1; 0], [0;0;1], 'FaceColor', [0.4, 0.4, 0.9])
+% set(gca, 'DataAspectRatio', [1,1,1]);
+% camlight;
+% figure(gcf)

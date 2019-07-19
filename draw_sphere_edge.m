@@ -1,5 +1,5 @@
 function draw_sphere_edge(v1, v2, varargin)
-% Draw an arc on the sphere (or circle) in black, from v1 to v2, using 
+% Draw an arc on the sphere (or circle) in black, or optional other color/style, from v1 to v2, using 
 % npoints points.
 
 npoints = 20; 

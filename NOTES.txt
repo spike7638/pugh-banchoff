@@ -29,3 +29,18 @@ draw_point (loc, options)
 
 draw_edge
 draw_tri
+
+Operations on an equivariant complex: 
+Construct from a group and a point-set (one item from each orbit? Warning about orbit degeneracy,
+i.e., orbit whose size is smaller than |G|?)
+Add a top-simplex
+ 
+======
+What I want to interact with in the domain is 
+* an equivariant sphere complex, where I can fiddle with the point locations (and have equivariance enforced)
+* the option of adding/deleting a top-dim'l simplex, and having all its translates also added/deleted
+* have point-names that generalize to edge-names, face names, etc.; same for colors. Let's skip colors for now. 
+
+In the codomain, I just want a equivariant complex whose point locations I can adjust while maintining equivariance
+I also want the simplices named, and want to be able to add/delete top simplices
+COlors would be nice too. 

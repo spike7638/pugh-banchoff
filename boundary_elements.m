@@ -2,8 +2,8 @@ function e = boundary_elements(ss)
 % For a list of simplices, where ith simplex is s(:, i)
 % produce all boundary elements (each counted once) in sorted order
 
-q = size(ss, 1);
-if (q == 1) 
+q = size(ss, 1);  % this is the simplex dimension + 1
+if (q == 1)       % 0D simplices have no boundary
     e = [];
     return;
 end
